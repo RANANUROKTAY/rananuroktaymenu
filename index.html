@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8" lang="tr">
+    
+</head>
+<style>
+  
+body{
+
+    background-color: rgb(253, 239, 249);
+
+}
+
+.yeşildalga{
+
+  background-color: rgb(250, 239, 222);
+  font-family: Cursive;
+
+}
+
+.resimharitası{
+
+font-size: 30px;
+background-color: rgb(248, 238, 224);
+
+} 
+
+.karmaşa{
+
+  font-size: 30px;
+  background-color:rgb(250, 246, 242) ;
+
+}
+
+table,th,td{
+
+  border-bottom: 2px solid rgb(13, 74, 9);
+  background-color:rgb(232, 247, 233);
+            
+}
+
+th,td:hover{
+
+  background-color:rgba(77, 246, 162, 0.549);
+
+}
+
+th,td{
+
+  font-family: Cursive;
+ padding:17px;
+            
+}
+
+</style>
+
+<body> 
+  
+  <script>
+
+  function lamba(sw){
+   var pic;
+   
+   if(sw==0){
+    pic="Resimler/Kırmızı.png"
+   }
+   if (sw==1){
+    pic="Resimler/Sarı.png"
+   }
+   if (sw==2){
+    pic="Resimler/Yeşil.png"
+   }
+   if (sw==3){
+    pic="Resimler/Trafiklambası.png"
+   }
+    if (sw==4){
+    pic="Resimler/Hepsi.png"
+   }
+
+   document.getElementById('myImage').src = pic;
+  }
+   
+  </script>
+
+    <img id="myImage" src="Resimler/Trafiklambası.png" width="400" height="400">
+    <p>
+    <button type="button" style="background-color: rgb(246, 80, 38);" onclick="lamba(0)">Kırmızı</button>
+    <button type="button" style="background-color:yellow ;" onclick="lamba(1)">Sarı</button>
+    <button type="button" style="background-color: rgb(31, 173, 31);" onclick="lamba(2)">Yeşil</button>
+    <button type="button" style="background-color: rgb(166, 166, 230);" onclick="lamba(3)">Boş görünsün</button>
+    <button type="button" style="background-color: pink;" onclick="lamba(4)">Hepsi yansın</button>
+
+  </p><br><br><br>
+
+  <div class="resimharitası">
+
+    <p style="color:rgba(9, 101, 107, 0.919) ;">Trafik lambasını yakından tanıyalım.</p>
+    <a href="Resimharitası.html" target="_blank">Trafik Lambası</a> 
+
+  </div><br><br><br>
+
+
+  <div class="karmaşa">
+
+    <p style="color:rgba(9, 107, 66, 0.919) ;">Trafik lambası icat edilmeseydi ne olurdu?</p>
+    <a href="Hindistantrafiği.html" target="_blank">Müthiş İcat</a> 
+
+  </div><br><br><br>
+
+
+  <div class="yeşildalga">
+
+    <p style="color:rgba(45, 34, 129, 0.919) ;font-size:25px;">Yeşil dalga sisteminin ne olduğunu öğrenmek için aşağıdaki butona tıklayınız.</p> 
+    <button style="background-color: rgb(155, 241, 121);" id="btn">Yeşil dalga nedir?</button>
+    <div id="kutu"> 
+    </div><br><br>
+    
+  <script>
+
+      function Yazdir(){
+        document.getElementById("kutu").innerHTML="Yeşil dalga sistemi; ana arterlerde yakın ara ile yer alan trafik ışıklarında peş peşe kırmızı ışığa yakalanmayı engellemek üzere kurulan sinyalizasyon sistemidir.Seçilmiş olan güzergahlarda belirli bir hızda seyahat edildiğinde tüm trafik ışıklarından yeşil ile geçiş yapmayı sağlayan sistem bu suretle de zaman ve yakıt tasarrufuna imkan vermektedir. Ayrıca sürücüler sabit hızla kavşaklar arasında paket paket geçiş yaptıklarından trafik akışı daha sağlıklı gerçekleşmektedir. Sürücülerin bekleme süresi en az %50 oranında azalmaktadır. Yeşil dalga sistemi ile yasal hız limitlerine uyum avantaj teşkil ettiğinden hız limitlerine uyum da teşvik edilmiş olur. Yeşil dalga sistemi uygulanmış olan kavşaklarda tabela ile bu sistemin var olduğu bilgisi verilir ve uyulması gereken hız limiti belirtilir. ";
+        }
+      
+      var btnYaz=document.getElementById("btn");
+      btnYaz.onclick=Yazdir;
+
+  </script>
+
+  </div><br><br><br>
+
+
+  
+<center>
+
+<table style="widht:50%">
+  <caption style="color:rgb(36, 105, 91);font-size:50px;"> Malatya'da Yeşil Dalga Sistemi </caption>
+  <br>
+
+  <tr>
+      <th>Semt-Cadde-Yol</th>
+      <th> Yeşil Dalga Var Mı? </th>
+      <th>Kaç Km Hız </th>
+
+  </tr>
+
+
+  <tr>
+      <td>İnönü Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>İsmet Paşa Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Atatürk Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>İnönü Üniversitesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+        <td>Fahri Kayahan Bulvarı</td>
+        <td>VAR</td>
+        <td>70</td>
+  </tr>
+
+  <tr>
+      <td>İsimsiz Yol</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Sivas Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Turgut Temelli caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Mehmet Buyruk Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Kahramanmaraş-Malatya Yolu</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Şehit Hamit Fendoğlu caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Buhara Bulvarı</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Fuzuli Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Halep Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Hamit Fendoğlu Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Hasan Bey Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Tevfik Temelli Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Zapçıoğlu Caddesi</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Kayseri-Malatya Yolu</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+
+  <tr>
+      <td>Somuncubaba Bulvarı</td>
+      <td>YOK</td>
+      <td>-</td>
+  </tr>
+    
+    </center>
+
+</body>
+</html>
